@@ -24,3 +24,14 @@ conn.commit()
 
 # Закриття з'єднання з базою даних
 conn.close()
+
+
+# Додавання нового користувача до бази даних
+def create_user(username,email,password):
+    conn=sqlite3.connect(db_path)
+    cursor=conn.cursor()
+    cursor.execute('''
+                   INSERT INTO users(username,email,password) VALUES (?,?,?)
+                   ''',(username,email,password))
+    conn.commit()
+    conn.close()
