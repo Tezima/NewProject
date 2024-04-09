@@ -1,0 +1,17 @@
+{
+  "name": "newproject1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Tezima",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cowsay": "^1.6.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  }
+}
