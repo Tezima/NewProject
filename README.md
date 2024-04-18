@@ -4,7 +4,7 @@
 
 ## Вміст
 
-1. [Перший файл](/views/golovna.ejs)
+1. [Перший файл](/views/golovna.html)
 
 
 ...
