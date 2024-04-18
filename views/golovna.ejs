@@ -7,9 +7,8 @@
     <link rel="stylesheet" type="text/css" href="/golovna.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="/golovnaJs/perexid_profrl.js"></script>
+    <script src="/js/test.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="/profil//profil_reg.css/style.css"> -->
 </head>
 <body> 
@@ -74,9 +73,17 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <form method="post" action="/check-user">
-        <input type="text" name="username" placeholder="Імя користувача">
-        <button type="submit">Пошук</button>
-    </form>
 
+    <form action="/register" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit" >Register</button>
+
+        
+    </form>
+    <button type="submit" onclick="redirect()">Тест</button>
 </html>
+
