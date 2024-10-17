@@ -9,11 +9,16 @@
   "author": "Tezima",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "cache-manager": "^5.7.3",
     "cowsay": "^1.6.0",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "multer": "^1.4.5-lts.1",
     "newrelic": "^11.15.0",
+    "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   }
 }

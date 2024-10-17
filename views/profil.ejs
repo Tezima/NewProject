@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/prfil.css">
     <title>Профіль користувача</title>
 </head>
 <body>
-    <p>Привіт, <%= username %>!</p>
-    <p>Email: <%= email %></p>
-    <p>Email: <%= id %></p>
-
+    <div class="profil">
+        <div class="photoprofil" id="photoprofil">
+            <!-- Відображення фото на сторінці профілю -->
+            <% if (photo) { %>
+                <img src="/uploads/<%= photo %>" alt="Фото користувача" id="user-photo">
+            <% } else { %>
+                <p>Фото відсутнє</p>
+            <% } %>
+        </div>
+        <div class="formphoto">
+            <!-- Форма для завантаження фото -->
+            <% if (!photo) { %>
+                <form id="uploadForm" action="/upload?id=<%= id %>" method="post" enctype="multipart/form-data">
+                    <input type="file" name="photo" accept="image/*">
+                    <button type="submit">Завантажити фото</button>
+                </form>
+            <% } %>
+        </div>
+        <div class="username">
+            <p><%= username %></p>
+        </div>
+        <div class="vernytgolovna" onclick="perehid_golovna()">
+            <p> < Вернуться </p>
+        </div>
+        <div class="logout">
+            <form id="logoutForm" action="/logout" method="post">
+                <button type="submit">Вийти</button>
+            </form>
+        </div>
+    </div>
+    <script src="/perexid.js"></script>
     <script src="/script.js"></script>
+    <div class="testres">
+    </div>
 </body>
 </html>

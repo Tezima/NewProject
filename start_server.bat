@@ -1,5 +1,11 @@
 @echo off
 echo Запуск сервера...
-start microsoft-edge:http://localhost:3000
-node C:\OSPanel\domains\NewProject1\server.js
+
+REM Відкриття браузера Microsoft Edge з потрібною URL-адресою
+start microsoft-edge:http://localhost:8080
+
+REM Запуск Node.js сервера з вказаним файлом server.js
+node "C:\Users\dimas\IdeaProjects\SERVER\MyEnglishv0_1\server.js"
+
+REM Очікування користувача перед закриттям вікна
 pause

@@ -1,0 +1,102 @@
+/* Змінні для кольорів */
+:root {
+    --background: #1634c9db; /* Головний фон */
+    --text: #fff; /* Колір тексту */
+    --text2: #000; /* Додатковий колір тексту */
+}
+
+/* Стилі для body та html */
+body, html {
+    margin: 0; /* Відсутність внутрішніх відступів */
+    min-height: 100vh; /* Мінімальна висота від заголовку до нижньої частини сторінки */
+    display: flex; /* Відображення як flex container */
+    flex-direction: column; /* Вертикальний напрямок головного контейнера */
+    width: 100%; /* Ширина контейнера по всій ширині екрану */
+    height: 100%; /* Висота контейнера по всій висоті екрану */
+    background: var(--background) url('/picturegolovna/ai.jpg') center center no-repeat; /* Фоновий колір з картинкою */
+    background-size: cover; /* Розмір фону по ширині контейнера */
+    font-family: Comforteam, cursive; /* Вибір шрифту з Google Fonts */
+    color: var(--text); /* Колір тексту */
+}
+
+/* Основний контейнер профілю */
+.profil {
+    display: flex; /* Відображення як flex container */
+    justify-content: space-around; /* Рівномірне розташування елементів між собою */
+    align-items: center; /* Центрування по вертикалі */
+    margin: 10px; /* Зовнішні відступи для контейнера */
+    height: 100px; /* Висота контейнера */
+    width: 300px; /* Ширина контейнера */
+}
+
+/* Контейнер для фотографії профілю */
+.photoprofil {
+    width: 100px; /* Ширина контейнера */
+    height: 100px; /* Висота контейнера */
+    background: rgba(255, 255, 255, 0.5); /* Прозорий білий фон */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Тонка біла рамка */
+    display: flex; /* Відображення як flex container */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    border-radius: 10px; /* Закруглені кути */
+    backdrop-filter: blur(10px); /* Розмиття фону */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
+/* Зображення профілю */
+.photoprofil img {
+    width: 50px; /* Розмір зображення по ширині контейнера */
+    height: 50px; /* Розмір зображення по висоті контейнера */
+    object-fit: cover; /* Заповнення контейнера */
+    border-radius: 10px; /* Закруглені кути для зображення */
+}
+
+/* Контейнер для імені користувача */
+.username {
+    color: #000;
+    width: 70px; /* Ширина контейнера */
+    height: 40px; /* Висота контейнера */
+    background: rgba(255, 255, 255, 0.5); /* Прозорий білий фон */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Тонка біла рамка */
+    display: flex; /* Відображення як flex container */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    border-radius: 10px; /* Закруглені кути */
+    backdrop-filter: blur(10px); /* Розмиття фону */
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+    
+}
+.testres{
+    width: 93%; /* Ширина контейнера */
+    height: 500px; /* Висота контейнера */
+    background: rgba(255, 255, 255, 0.5); /* Прозорий білий фон */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Тонка біла рамка */
+    display: flex; /* Відображення як flex container */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    border-radius: 10px; /* Закруглені кути */
+    backdrop-filter: blur(10px); /* Розмиття фону */
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.vernytgolovna{
+    width: 90px; /* Ширина контейнера */
+    height: 35px; /* Висота контейнера */
+    background: rgba(255, 255, 255, 0.5); /* Прозорий білий фон */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Тонка біла рамка */
+    display: flex; /* Відображення як flex container */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    border-radius: 10px; /* Закруглені кути */
+    backdrop-filter: blur(10px); /* Розмиття фону */
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.vernytgolovna p{
+    text-align: center;
+    color: #000;
+    display: flex;
+
+}

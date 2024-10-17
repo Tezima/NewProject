@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js" defer></script> <!-- Додав defer для відкладеного завантаження скрипта -->
+    <title>Тест</title>
+</head>
+<body>
+    <div class="test-container">
+        <button class="toggle-button" onclick="toggleQuiz()">Розгорнути/Згорнути тест</button>
+        <div class="quiz-content">
+            <h1>Тест</h1>
+            <form id="quizForm"> 
+                <div>
+                    <p>1. Якого кольору небо?</p>
+                    <input type="radio" name="question1" value="correct" id="q1a1">
+                    <label for="q1a1">Синього</label><br>
+                    <input type="radio" name="question1" value="incorrect" id="q1a2">
+                    <label for="q1a2">Червоного</label><br>
+                    <input type="radio" name="question1" value="incorrect" id="q1a3">
+                    <label for="q1a3">Зеленого</label><br>
+                </div>
+                <div>
+                    <p>2. Якого кольору трава?</p>
+                    <input type="radio" name="question2" value="correct" id="q2a1">
+                    <label for="q2a1">Зеленого</label><br>
+                    <input type="radio" name="question2" value="incorrect" id="q2a2">
+                    <label for="q2a2">Синього</label><br>
+                    <input type="radio" name="question2" value="incorrect" id="q2a3">
+                    <label for="q2a3">Червоного</label><br>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="checkAnswers()">Перевірити відповіді</button>
+                    <button type="button" onclick="resetQuiz()">Перезапустити тест</button>
+                </div>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+</body>
+</html>
